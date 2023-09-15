@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Migración de Datos con UiPath - Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">alber.py</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Sobre Mí</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Blog</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="post-box">
+            
+              <div class="post-meta">
+                <h1 class="article-title">RPA: Automatización o migración en sistemas antiguos (AS/400...)</h1>
+                <ul>
+                  <li>
+                    <span class="bi bi-person"></span>
+                    <a href="#">Alberto Iturralde</a>
+                  </li>
+                  <li>
+                    <span class="bi bi-tag"></span>
+                    <a href="#">UiPath</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="post-thumb">
+                <img src="assets/img/blog-post-1-1.png" class="img-fluid" alt="">
+              </div>
+
+              <div class="article-content">
+                <h3>Situación con un sistema antiguo</h3>
+                <p>¿Todavía utilizas en el trabajo estos sistemas antiguos con pantallas comúnmente en blanco y verde como se muestra en la imagen de arriba? En nuestro caso, todavía nos encontramos a menudo con estas pantallas, y la mayoría de los casos que encontramos son sistemas de IBM que a menudo se llaman AS/400 o aplicaciones Mainframe. El problema con estos sistemas es que son muy antiguos (~30 a 40 años), por lo que a menudo son difíciles de mantener (a menudo debido a la falta de personal calificado) o los editores de software ya no proporcionan soporte. El gran temor es que, en caso de una actualización necesaria, todo deje de funcionar cuando aún dependes de ello o que no puedas hacer que se comunique con tus otros sistemas.</p>
+                <p>
+                  Los casos que encontramos los utilizan para la gestión de contratos de seguros, préstamos o cuentas. Su uso se puede dividir en 3 categorías:
+                  <ul>
+                    <li>Como herramienta principal de trabajo (el personal todavía trabaja directamente en él).</li>
+                    <li>Como una herramienta secundaria para casos específicos (solo una parte del personal utiliza el software).</li>
+                    <li>O como una herramienta de archivo de contratos antiguos que aún deben vencer (ningún dato nuevo se inserta en el sistema).</li>
+                  </ul>
+                </p>
+                <p>Lo que es muy interesante es que, sin importar la categoría y a pesar de que el sistema es antiguo, es posible aplicar nuevas herramientas de automatización como la RPA (automatización de procesos robóticos = asistente virtual) para automatizar tareas en él (o migrar datos). ¡Lo nuevo se encuentra con lo viejo!</p>
+                <h3>Demostración</h3>
+                <video controls width="100%" height="auto">
+                  <source src="assets/video/Compressed_VideoAS400.mp4" type="video/mp4">                 Your browser does not support the video tag.
+                </video>
+                <p>
+                  En esta demostración, utilizamos la RPA para automatizar la extracción de información de clientes y sus cuentas de un sistema bancario ficticio, así como su nivel de riesgo. Todos los datos son inventados. El punto de partida es un archivo de Excel que contiene una lista de clientes y su identificador único. Lo que ves a continuación en el video es un extracto de cómo el asistente virtual (la RPA) trabaja, y al final, el resultado de la exportación se muestra en un archivo de Excel.
+                </p>
+                <h3>Posibilidades de automatización</h3>
+                <p>Ahora, piensa en las tareas que tú o tus colegas realizan regularmente en un sistema similar. Se han vuelto rutinarias. Pero, ¿qué te parecería poder automatizar las tareas más tediosas?</p>
+                <p>Algunos ejemplos de tareas que se pueden automatizar con este tipo de sistema antiguo y RPA son:
+                  <ul>
+                    <li>Migración de pólizas de seguros de vida (más de 100,000 contratos y detalles para exportar).</li>
+                    <li>Actualización de pólizas de seguro de salud en el AS400 después de un cambio en el CRM.</li>
+                    <li>Archivo de contratos de seguro de objetos.</li>
+                    <li>Búsqueda y visualización de información sobre el cliente para reducir la duración promedio de una llamada al centro de llamadas.</li>
+                  </ul>
+                </p>
+                <h3>¿Cómo puedes aprovecharlo?</h3>
+                <p>Si no estás familiarizado con la RPA, lo mejor es comenzar con un simple proyecto piloto. Para darte una idea, calcula un presupuesto de aproximadamente 8,000€ para la automatización de la exportación de un tipo de dato.</p>
+                <p>Con los proyectos de RPA, los requisitos suelen ser similares:
+                  <ul>
+                    <li>El proceso claramente definido, idealmente documentado.</li>
+                    <li>Acceso a tu entorno de trabajo y la instalación de la herramienta RPA.</li>
+                    <li>Una licencia de prueba para realizar pruebas (2 meses gratis).</li>
+                    <li>Tu experto en automatización.</li>
+                  </ul>
+                </p>
+                
+                <blockquote class="blockquote">
+                  <p class="mb-0">¿Quieres saber más? ¡Contacta conmigo! Estaré encantado de hablar contigo.</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="widget-sidebar">
+              <h5 class="sidebar-title">Otras entradas</h5>
+              <div class="sidebar-content">
+                <ul class="list-sidebar">
+                  <li>
+                    <a href="#">Atque placeat maiores.</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                  </li>
+                  <li>
+                    <a href="#">Nam quo autem exercitationem.</a>
+                  </li>
+                  <li>
+                    <a href="#">Atque placeat maiores nam quo autem</a>
+                  </li>
+                  <li>
+                    <a href="#">Nam quo autem exercitationem.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>alber.py</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
