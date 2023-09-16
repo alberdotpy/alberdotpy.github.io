@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>¿Qué es la RPA y cómo te va a ayudar? - Blog</title>
+  <title>Migración de Datos con UiPath - Blog</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -76,7 +76,7 @@
             <div class="post-box">
             
               <div class="post-meta">
-                <h1 class="article-title">¿Qué es la RPA y cómo te va a ayudar?</h1>
+                <h1 class="article-title">RPA: Automatización o migración en sistemas antiguos (AS/400...)</h1>
                 <ul>
                   <li>
                     <span class="bi bi-person"></span>
@@ -90,53 +90,51 @@
               </div>
 
               <div class="post-thumb">
-                <img src="assets/img/post-1.png" class="img-fluid" alt="">
+                <img src="assets/img/blog-post-1-1.png" class="img-fluid" alt="">
               </div>
 
               <div class="article-content">
-                <h3>¿Qué es la RPA?</h3>
-                <p>La RPA, o Automatización de Procesos Robóticos, es una tecnología que utiliza robots de software para realizar tareas repetitivas y manuales en los procesos empresariales. Estos "robots" pueden imitar las acciones humanas en sistemas digitales y aplicaciones, lo que permite automatizar una amplia variedad de tareas.</p>
-                
-                <h3>¿Cómo te va a ayudar?</h3>
-                <p>La RPA puede ser una herramienta transformadora para tu empresa. Aquí tienes algunas formas en las que te beneficiará:</p>
-                
-                <ul>
-                  <li><strong>Mayor Eficiencia:</strong> Los robots de RPA pueden realizar tareas a una velocidad constante sin errores, lo que acelera los procesos y reduce los tiempos de espera.</li>
-                  <li><strong>Reducción de Errores:</strong> Al eliminar la intervención humana en tareas repetitivas, se reducen significativamente los errores, lo que mejora la precisión y la calidad del trabajo.</li>
-                  <li><strong>Ahorro de Tiempo y Costos:</strong> La automatización de procesos permite a tu equipo centrarse en tareas estratégicas, lo que ahorra tiempo y recursos.</li>
-                  <li><strong>Escalabilidad:</strong> Los robots de RPA se pueden adaptar y ampliar fácilmente para abordar nuevas tareas y procesos a medida que tu empresa crece.</li>
-                </ul>
-
-                <h3>Plataforma UiPath</h3>
-                <p>UiPath es una de las plataformas líderes en RPA. Ofrece una amplia gama de herramientas y servicios para la creación, gestión y despliegue de robots de RPA.</p>
-
-                <div class="post-thumb">
-                  <br>
-                  <img src="assets/img/post-1-1.png" class="img-fluid" alt="">
-                </div>
-                <br>
-
-                <h4>Robots atendidos (Attended)</h4>
-                <p>Los Robots Atendidos trabajan en colaboración con los empleados. Ayudan a los usuarios humanos a realizar tareas más rápido y con menos errores al proporcionar asistencia en tiempo real.</p>
-
-                <h4>Robots desatendidos (Unattended)</h4>
-                <p>Los Robots Desatendidos operan de manera autónoma sin intervención humana. Realizan tareas predefinidas en horarios programados, lo que los convierte en herramientas poderosas para la automatización de procesos de alto volumen.</p>
-
-                <h4>Orquestador (Orchestrator)</h4>
-                <p>El Orquestador de UiPath es una plataforma de gestión centralizada que permite programar, supervisar y gestionar robots de RPA. Facilita la gestión de flujos de trabajo y recursos, lo que optimiza la eficiencia operativa.</p>
-
-                <h4>Action Center</h4>
-                <p>Action Center es una interfaz de usuario que permite a los empleados interactuar con los Robots Atendidos. Proporciona visibilidad y control sobre las tareas automatizadas, permitiendo la validación y toma de decisiones en tiempo real.</p>
-
-                <h4>Document Understanding</h4>
-                <p>Document Understanding es una función de UiPath que permite a los robots comprender y procesar documentos no estructurados. Esto es fundamental en la automatización de tareas que implican la lectura y extracción de información de documentos, como facturas y formularios.</p>
-
-                <h4>Y mucho más</h4>
-                <p>La plataforma de UiPath para lo que ellos llaman "hyperautomation" es completísima, y mejor que intentar explicarlo todo en un blog sería organizar una reunión para ver qué componentes de la misma te serán más útiles o necesarios.</p>
-
+                <h3>Situación con un sistema antiguo</h3>
+                <p>¿Todavía utilizas en el trabajo estos sistemas antiguos con pantallas comúnmente en blanco y verde como se muestra en la imagen de arriba? En nuestro caso, todavía nos encontramos a menudo con estas pantallas, y la mayoría de los casos que encontramos son sistemas de IBM que a menudo se llaman AS/400 o aplicaciones Mainframe. El problema con estos sistemas es que son muy antiguos (~30 a 40 años), por lo que a menudo son difíciles de mantener (a menudo debido a la falta de personal calificado) o los editores de software ya no proporcionan soporte. El gran temor es que, en caso de una actualización necesaria, todo deje de funcionar cuando aún dependes de ello o que no puedas hacer que se comunique con tus otros sistemas.</p>
+                <p>
+                  Los casos que encontramos los utilizan para la gestión de contratos de seguros, préstamos o cuentas. Su uso se puede dividir en 3 categorías:
+                  <ul>
+                    <li>Como herramienta principal de trabajo (el personal todavía trabaja directamente en él).</li>
+                    <li>Como una herramienta secundaria para casos específicos (solo una parte del personal utiliza el software).</li>
+                    <li>O como una herramienta de archivo de contratos antiguos que aún deben vencer (ningún dato nuevo se inserta en el sistema).</li>
+                  </ul>
+                </p>
+                <p>Lo que es muy interesante es que, sin importar la categoría y a pesar de que el sistema es antiguo, es posible aplicar nuevas herramientas de automatización como la RPA (automatización de procesos robóticos = asistente virtual) para automatizar tareas en él (o migrar datos). ¡Lo nuevo se encuentra con lo viejo!</p>
+                <h3>Demostración</h3>
+                <video controls width="100%" height="auto">
+                  <source src="assets/video/Compressed_VideoAS400.mp4" type="video/mp4">                 Your browser does not support the video tag.
+                </video>
+                <p>
+                  En esta demostración, utilizamos la RPA para automatizar la extracción de información de clientes y sus cuentas de un sistema bancario ficticio, así como su nivel de riesgo. Todos los datos son inventados. El punto de partida es un archivo de Excel que contiene una lista de clientes y su identificador único. Lo que ves a continuación en el video es un extracto de cómo el asistente virtual (la RPA) trabaja, y al final, el resultado de la exportación se muestra en un archivo de Excel.
+                </p>
+                <h3>Posibilidades de automatización</h3>
+                <p>Ahora, piensa en las tareas que tú o tus colegas realizan regularmente en un sistema similar. Se han vuelto rutinarias. Pero, ¿qué te parecería poder automatizar las tareas más tediosas?</p>
+                <p>Algunos ejemplos de tareas que se pueden automatizar con este tipo de sistema antiguo y RPA son:
+                  <ul>
+                    <li>Migración de pólizas de seguros de vida (más de 100,000 contratos y detalles para exportar).</li>
+                    <li>Actualización de pólizas de seguro de salud en el AS400 después de un cambio en el CRM.</li>
+                    <li>Archivo de contratos de seguro de objetos.</li>
+                    <li>Búsqueda y visualización de información sobre el cliente para reducir la duración promedio de una llamada al centro de llamadas.</li>
+                  </ul>
+                </p>
+                <h3>¿Cómo puedes aprovecharlo?</h3>
+                <p>Si no estás familiarizado con la RPA, lo mejor es comenzar con un simple proyecto piloto. Para darte una idea, calcula un presupuesto de aproximadamente 8,000€ para la automatización de la exportación de un tipo de dato.</p>
+                <p>Con los proyectos de RPA, los requisitos suelen ser similares:
+                  <ul>
+                    <li>El proceso claramente definido, idealmente documentado.</li>
+                    <li>Acceso a tu entorno de trabajo y la instalación de la herramienta RPA.</li>
+                    <li>Una licencia de prueba para realizar pruebas (2 meses gratis).</li>
+                    <li>Tu experto en automatización.</li>
+                  </ul>
+                </p>
                 
                 <blockquote class="blockquote">
-                  <p class="mb-0">La RPA es una inversión inteligente que puede impulsar la productividad y la rentabilidad de tu empresa. ¡Contacta conmigo para descubrir cómo puedo ayudarte a implementar la RPA en tu organización!</p>
+                  <p class="mb-0">¿Quieres saber más? ¡Contacta conmigo! Estaré encantado de hablar contigo.</p>
                 </blockquote>
               </div>
             </div>
