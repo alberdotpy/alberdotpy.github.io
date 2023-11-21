@@ -1460,3 +1460,17 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow: auto;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: #333;
+}
