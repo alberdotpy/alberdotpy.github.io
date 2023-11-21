@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Migración de Datos con UiPath - Blog</title>
+  <title>Automatizaciones sencillas con Python - Blog</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -76,7 +76,7 @@
             <div class="post-box">
             
               <div class="post-meta">
-                <h1 class="article-title">RPA: Automatización o migración en sistemas antiguos (AS/400...)</h1>
+                <h1 class="article-title">Automatizaciones sencillas con Python</h1>
                 <ul>
                   <li>
                     <span class="bi bi-person"></span>
@@ -84,54 +84,106 @@
                   </li>
                   <li>
                     <span class="bi bi-tag"></span>
-                    <a href="#">UiPath</a>
+                    <a href="#">Python</a>
                   </li>
                 </ul>
               </div>
 
               <div class="post-thumb">
-                <img src="assets/img/blog-post-1-1.png" class="img-fluid" alt="">
+                <img src="assets/img/post-3.jpg" class="img-fluid" alt="">
               </div>
 
               <div class="article-content">
-                <h3>Situación con un sistema antiguo</h3>
-                <p>¿Todavía utilizas en el trabajo estos sistemas antiguos con pantallas comúnmente en blanco y verde como se muestra en la imagen de arriba? En nuestro caso, todavía nos encontramos a menudo con estas pantallas, y la mayoría de los casos que encontramos son sistemas de IBM que a menudo se llaman AS/400 o aplicaciones Mainframe. El problema con estos sistemas es que son muy antiguos (~30 a 40 años), por lo que a menudo son difíciles de mantener (a menudo debido a la falta de personal calificado) o los editores de software ya no proporcionan soporte. El gran temor es que, en caso de una actualización necesaria, todo deje de funcionar cuando aún dependes de ello o que no puedas hacer que se comunique con tus otros sistemas.</p>
-                <p>
-                  Los casos que encontramos los utilizan para la gestión de contratos de seguros, préstamos o cuentas. Su uso se puede dividir en 3 categorías:
-                  <ul>
-                    <li>Como herramienta principal de trabajo (el personal todavía trabaja directamente en él).</li>
-                    <li>Como una herramienta secundaria para casos específicos (solo una parte del personal utiliza el software).</li>
-                    <li>O como una herramienta de archivo de contratos antiguos que aún deben vencer (ningún dato nuevo se inserta en el sistema).</li>
-                  </ul>
-                </p>
-                <p>Lo que es muy interesante es que, sin importar la categoría y a pesar de que el sistema es antiguo, es posible aplicar nuevas herramientas de automatización como la RPA (automatización de procesos robóticos = asistente virtual) para automatizar tareas en él (o migrar datos). ¡Lo nuevo se encuentra con lo viejo!</p>
-                <h3>Demostración</h3>
-                <video controls width="100%" height="auto">
-                  <source src="assets/video/Compressed_VideoAS400.mp4" type="video/mp4">                 Your browser does not support the video tag.
-                </video>
-                <p>
-                  En esta demostración, utilizamos la RPA para automatizar la extracción de información de clientes y sus cuentas de un sistema bancario ficticio, así como su nivel de riesgo. Todos los datos son inventados. El punto de partida es un archivo de Excel que contiene una lista de clientes y su identificador único. Lo que ves a continuación en el video es un extracto de cómo el asistente virtual (la RPA) trabaja, y al final, el resultado de la exportación se muestra en un archivo de Excel.
-                </p>
-                <h3>Posibilidades de automatización</h3>
-                <p>Ahora, piensa en las tareas que tú o tus colegas realizan regularmente en un sistema similar. Se han vuelto rutinarias. Pero, ¿qué te parecería poder automatizar las tareas más tediosas?</p>
-                <p>Algunos ejemplos de tareas que se pueden automatizar con este tipo de sistema antiguo y RPA son:
-                  <ul>
-                    <li>Migración de pólizas de seguros de vida (más de 100,000 contratos y detalles para exportar).</li>
-                    <li>Actualización de pólizas de seguro de salud en el AS400 después de un cambio en el CRM.</li>
-                    <li>Archivo de contratos de seguro de objetos.</li>
-                    <li>Búsqueda y visualización de información sobre el cliente para reducir la duración promedio de una llamada al centro de llamadas.</li>
-                  </ul>
-                </p>
-                <h3>¿Cómo puedes aprovecharlo?</h3>
-                <p>Si no estás familiarizado con la RPA, lo mejor es comenzar con un simple proyecto piloto. Para darte una idea, calcula un presupuesto de aproximadamente 8,000€ para la automatización de la exportación de un tipo de dato.</p>
-                <p>Con los proyectos de RPA, los requisitos suelen ser similares:
-                  <ul>
-                    <li>El proceso claramente definido, idealmente documentado.</li>
-                    <li>Acceso a tu entorno de trabajo y la instalación de la herramienta RPA.</li>
-                    <li>Una licencia de prueba para realizar pruebas (2 meses gratis).</li>
-                    <li>Tu experto en automatización.</li>
-                  </ul>
-                </p>
+                <br>
+                <p>La automatización de tareas sencillas se ha convertido en una necesidad en el mundo digital actual, donde el tiempo es un recurso valioso. Python, con su versatilidad y facilidad de uso, emerge como una herramienta poderosa para simplificar la automatización de tareas cotidianas. En este artículo, exploraremos cómo puedes aprovechar Python para crear scripts y programas que realicen acciones repetitivas de manera eficiente, ahorrando tiempo y minimizando errores.</p>
+                
+                <h3>¿Por qué Python?</h3>
+                <p>Python se ha convertido en uno de los lenguajes de programación más populares gracias a su sintaxis clara y legible. Estas características hacen que sea accesible para principiantes y, al mismo tiempo, potente para los desarrolladores experimentados. Además, la amplia variedad de bibliotecas y módulos disponibles facilita la automatización de una amplia gama de tareas.</p>
+                
+                <h3>Automatización de Tareas Repetitivas con Scripts en Python</h3>
+                <p>Uno de los usos más comunes de Python en la automatización es la creación de scripts para realizar tareas repetitivas. Imagina tener que renombrar un conjunto de archivos de manera sistemática o descargar archivos de una página web de forma regular. Con Python, puedes escribir un script simple para manejar estas tareas.</p>
+                <pre>
+                  <code>
+  import os
+
+  # Obtener la lista de archivos en el directorio actual
+  archivos = os.listdir()
+  
+  # Renombrar archivos agregando un prefijo
+  for archivo in archivos:
+      nuevo_nombre = "prefijo_" + archivo
+      os.rename(archivo, nuevo_nombre)
+  
+  print("Tareas de renombrado completadas con éxito.") 
+                  </code>
+                </pre>
+                <p>Este es solo un ejemplo muy básico. La versatilidad de Python te permite abordar una variedad de tareas con scripts personalizados.</p>
+                
+                <h3>Automatización de Procesos con Programas en Python</h3>
+                <p>Además de los scripts, Python también puede utilizarse para desarrollar programas más complejos que automatizan procesos completos. Por ejemplo, si trabajas con hojas de cálculo regularmente y necesitas realizar manipulaciones específicas, un programa Python puede ser la solución.</p>
+                <pre>
+                  <code>
+  import pandas as pd
+
+  # Cargar datos desde un archivo CSV
+  datos = pd.read_csv('datos.csv')
+
+  # Realizar manipulaciones en los datos
+  promocion = 0.15
+  datos['columna_nueva'] = datos['columna_existente'] * (1-promocion)
+
+  # Guardar los resultados en un nuevo archivo CSV
+  datos.to_csv('datos_modificados.csv', index=False)
+
+  print("Proceso de manipulación de datos completado.")
+                  </code>
+                </pre>
+                <p>Este programa utiliza una biblioteca muy popular llamada pandas para manipular datos tabulares de manera eficiente. Puedes adaptar programas similares a tus necesidades específicas.</p>
+              
+                <h3>Automatización de Tareas Web con Selenium</h3>
+                <p>Python también es útil para la automatización de tareas web, y la biblioteca Selenium es una herramienta valiosa para ello. Por ejemplo, si necesitas extraer información de una página web de forma regular, Selenium puede ayudarte a automatizar este proceso.</p>
+                <pre>
+                  <code>
+  from selenium import webdriver
+  from selenium.webdriver.common.keys import Keys
+  import time
+  
+  # Iniciar el navegador web automatizado (por ejemplo, Chrome)
+  navegador = webdriver.Chrome()
+  
+  try:
+      # Abrir la página de Yahoo Finance
+      navegador.get('https://finance.yahoo.com')
+  
+      # Encontrar el cuadro de búsqueda e ingresar el símbolo de una acción (por ejemplo, AAPL para Apple)
+      cuadro_busqueda = navegador.find_element_by_name('p')
+      cuadro_busqueda.send_keys('AAPL')  # Se puede cambiar 'AAPL' por el símbolo de la acción que sea
+  
+      # Presionar Enter para realizar la búsqueda
+      cuadro_busqueda.send_keys(Keys.RETURN)
+  
+      # Esperar unos segundos para que se cargue la página con los resultados
+      time.sleep(3)
+  
+      # Encontrar el elemento que contiene el precio de la acción
+      precio_elemento = navegador.find_element_by_xpath('//span[@data-reactid="50"]')
+      precio_accion = precio_elemento.text
+  
+      print(f"El precio de la acción es: {precio_accion}")
+  
+  finally:
+      # Cerrar el navegador al finalizar
+      navegador.quit()
+                  </code>
+                </pre>
+                <p>Este ejemplo utiliza Selenium para abrir un navegador web automatizado, navegar a Yahoo Finance y extraer el precio de la acción de Apple. Usando pandas, un robot podría leer un CSV o archivo Excel, extraer una lista de acciones a buscar y completar la información en el mismo archivo. A esto se lo conoce como "Web Scraping", y aunque es una herramienta muy útil, a veces está sujeto a restricciones. Por eso en muchos casos se usa una API, un método más rápido y estable.</p>
+                
+                <h3>La opción de la interfaz gráfica</h3>
+                <p>Existen librerías que permiten crear fácilmente una interfaz gráfica para los scripts que acabamos de ver. Esto mejora y simplifica la experiencia del usuario, dándole una herramienta sencilla y a medida que se puede distribuir en forma de ejecutable (.exe).</p>
+                <p>Aquí va un ejemplo:</p>
+                <img src="assets/img/post-3-1.png" class="img-fluid" alt="">
+                <h3>Conclusión</h3>
+                <p>La automatización de tareas sencillas con Python no solo ahorra tiempo, sino que también reduce la probabilidad de errores humanos. Ya sea mediante la creación de scripts simples o el desarrollo de programas más complejos, Python ofrece una solución accesible y poderosa para simplificar tu flujo de trabajo diario. Comienza a explorar las posibilidades de la automatización con Python y experimenta cómo esta herramienta puede mejorar tu productividad de manera significativa.                </p>
                 
                 <blockquote class="blockquote">
                   <p class="mb-0">¿Quieres saber más? ¡Contacta conmigo! Estaré encantado de hablar contigo.</p>
@@ -146,19 +198,10 @@
               <div class="sidebar-content">
                 <ul class="list-sidebar">
                   <li>
-                    <a href="#">Atque placeat maiores.</a>
+                    <a href="blog-1.html">¿Qué es la RPA y cómo te va a ayudar?</a>
                   </li>
                   <li>
-                    <a href="#">Lorem ipsum dolor sit amet consectetur</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
-                  </li>
-                  <li>
-                    <a href="#">Atque placeat maiores nam quo autem</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
+                    <a href="blog-2.html">RPA: Automatización o migración en sistemas antiguos (AS/400...)</a>
                   </li>
                 </ul>
               </div>
